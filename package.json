@@ -1,15 +1,15 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-mintlify",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n node for Mintlify",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://mintlify.com",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Valerie Wong",
+    "email": "vkw7@cornell.edu"
   },
   "repository": {
     "type": "git",
@@ -33,14 +33,12 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/MintlifyApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/Mintlify/Mintlify.node.js"
     ]
-  },
+},
   "devDependencies": {
     "@typescript-eslint/parser": "~8.32.0",
     "eslint": "^8.57.0",
@@ -51,5 +49,8 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "overrides": {
+    "form-data": "^4.0.4"
   }
 }
