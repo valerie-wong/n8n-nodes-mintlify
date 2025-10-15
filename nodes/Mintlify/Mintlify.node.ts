@@ -74,7 +74,7 @@ import {
 			typeOptions: {rows: 5,},
 			default: '',
 			required: true,
-			placeholder: 'Update the getting started guide to include the new authentication flow',
+			placeholder: '',
 			description: 'Tell the Mintlify agent what documentation changes to make',
 		},
 		{
