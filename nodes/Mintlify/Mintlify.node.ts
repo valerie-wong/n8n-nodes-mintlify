@@ -102,11 +102,11 @@ import {
 				},
 			},
 			options: [
+				{ name: 'DELETE', value: 'DELETE' },
 				{ name: 'GET', value: 'GET' },
+				{ name: 'PATCH', value: 'PATCH' },
 				{ name: 'POST', value: 'POST' },
 				{ name: 'PUT', value: 'PUT' },
-				{ name: 'DELETE', value: 'DELETE' },
-				{ name: 'PATCH', value: 'PATCH' },
 			],
 			default: 'GET',
 			required: true,
